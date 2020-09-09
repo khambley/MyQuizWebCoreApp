@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyQuizWebCoreApp", "MyQuizWebCoreApp\MyQuizWebCoreApp.csproj", "{69D86B06-69D5-4DDE-B377-B4222F58C6BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyQuizWebCoreApp", "MyQuizWebCoreApp\MyQuizWebCoreApp.csproj", "{69D86B06-69D5-4DDE-B377-B4222F58C6BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9CB71545-4485-4F33-A1DF-347D850D94DA}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

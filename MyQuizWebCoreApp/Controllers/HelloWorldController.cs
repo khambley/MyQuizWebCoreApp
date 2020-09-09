@@ -10,9 +10,9 @@ namespace MyQuizWebCoreApp.Controllers
     public class HelloWorldController : Controller
     {
         // Get: /HelloWorld
-        public string Index()
+        public IActionResult Index()
         {
-            return "This is my Index (default) action";
+            return View();
         }
 
         // GET: /HelloWorld/Welcome
