@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using MyQuizWebCoreApp.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace MyQuizWebCoreApp
 {
@@ -24,6 +26,9 @@ namespace MyQuizWebCoreApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.AddDbContext<QuizDbContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("QuizDbContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
